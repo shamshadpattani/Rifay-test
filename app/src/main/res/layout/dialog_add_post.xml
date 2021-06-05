@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.shamshad.myapplication.MainViewModel" />
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginStart="@dimen/activity_margin"
+    android:layout_marginEnd="@dimen/activity_margin"
+    android:paddingBottom="@dimen/extra_margin"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/cancel_btn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/element_spacing"
+        android:text="@string/generic_close"
+        android:textAllCaps="true"
+        android:textColor="@color/colorDangerLight"
+        app:backgroundTint="@color/white"
+        app:iconTint="@color/colorDangerDark"
+        android:layout_marginTop="@dimen/element_spacing"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDescrp" />
+
+    <Button
+        android:id="@+id/save_btn"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/element_spacing"
+        android:text="@string/generic_save"
+        android:textAllCaps="true"
+        android:textColor="@color/colorSuccessLight"
+        app:backgroundTint="@color/white"
+      android:layout_marginTop="@dimen/element_spacing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDescrp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/element_spacing"
+            android:hint="@string/title"
+            android:layout_marginStart="@dimen/element_spacing"
+            android:layout_marginEnd="@dimen/element_spacing"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputTitle_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputDescrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/element_spacing"
+        android:hint="@string/descrp"
+        app:layout_constraintEnd_toEndOf="@+id/inputTitle"
+        app:layout_constraintStart_toStartOf="@+id/inputTitle"
+        app:layout_constraintTop_toBottomOf="@+id/inputTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputDescrp_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/element_spacing"
+            android:layout_marginEnd="@dimen/element_spacing"
+            android:imeOptions="actionNext" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

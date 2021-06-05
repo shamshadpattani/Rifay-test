@@ -8,18 +8,11 @@
 
     <dimen name="home_app_bar_height">300dp</dimen>
 
-    <dimen name="home_avatar_image_size">54dp</dimen>
-    <dimen name="home_center_image_size">50dp</dimen>
-    <dimen name="home_center_image_radius">3dp</dimen>
-    <dimen name="home_active_center_image_size">85dp</dimen>
-    <dimen name="home_active_center_image_radius">4dp</dimen>
 
-    <dimen name="problem_image_height">80dp</dimen>
+    <dimen name="bottom_recycler">50dp</dimen>
 
-    <dimen name="pageMargin">12dp</dimen>
-    <dimen name="offset">12dp</dimen>
-    <dimen name="pageMarginAndOffset">24dp</dimen>
 
-    <dimen name="eval_list_unsaved_image_margin">2dp</dimen>
-    <dimen name="eval_list_scroller_popup_size">50dp</dimen>
+
+    <dimen name="min_dialog">2dp</dimen>
+    <dimen name="min_dialog_radious">20dp</dimen>
 </resources>

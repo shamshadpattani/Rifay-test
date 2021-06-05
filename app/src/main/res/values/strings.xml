@@ -4,4 +4,6 @@
     <string name="generic_save">save</string>
     <string name="title">Title</string>
     <string name="descrp">Description</string>
+    <string name="no_net">No Internet</string>
+    <string name="back_net">Back Online</string>
 </resources>

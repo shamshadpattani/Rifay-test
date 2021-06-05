@@ -13,31 +13,11 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-    <style name="Widget.App.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
-        <item name="titleTextAppearance">@style/TextAppearance.Audit.ToolbarTitle</item>
+    <style name="MyAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/colorDangerDark</item>
+        <item name="android:colorBackground">@color/colorDangerLight</item>
+        <item name="android:windowBackground">@color/colorBatteryTwenty</item>
     </style>
 
-    <style name="TextAppearance.Audit.ToolbarTitle" parent="TextAppearance.myapp.Headline6">
-        <item name="fontFamily">@font/poppins_medium</item>
-        <item name="android:fontFamily">@font/poppins_medium</item>
-    </style>
-
-    <style name="Widget.App.Toolbar.Light">
-        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Toolbar.Light</item>
-    </style>
-    <style name="ThemeOverlay.App.Toolbar.Light" parent="">
-        <item name="colorPrimary">@color/colorSurface</item>
-        <item name="colorPrimaryVariant">@color/colorSecondarySurface</item>
-        <item name="colorOnPrimary">@color/textColorPrimary</item>
-    </style>
-
-    <style name="Widget.App.Toolbar.Transparent">
-        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Toolbar.Transparent</item>
-    </style>
-    <style name="ThemeOverlay.App.Toolbar.Transparent" parent="">
-        <item name="colorPrimary">@android:color/transparent</item>
-        <item name="colorPrimaryVariant">@android:color/transparent</item>
-        <item name="colorOnPrimary">@color/textColorPrimary</item>
-    </style>
 
 </resources>

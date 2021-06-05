@@ -9,6 +9,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardUseCompatPadding="true"
+    android:layout_marginStart="@dimen/element_spacing"
+    android:layout_marginEnd="@dimen/element_spacing"
+    app:cardElevation="@dimen/element_spacing"
     tools:showIn="@layout/activity_main">
 
     <androidx.constraintlayout.widget.ConstraintLayout
