@@ -68,7 +68,6 @@ init {
                     is ResultOf.Success -> {
                         _dataLoading.postValue(false)
                         _ispostAdd.postValue(true)
-                         getList()
                         discardChanges();
                     }
                     is ResultOf.Loading -> _dataLoading.postValue(true)
