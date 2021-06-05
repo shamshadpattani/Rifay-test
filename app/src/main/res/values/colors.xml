@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColorLighter">#CCA7DA</color>
+    <color name="primaryColorLight">#A672BA</color>
+    <color name="primaryColor">#864a9d</color>
+    <color name="primaryColorDark">#6D2F86</color>
+    <color name="primaryColorDarker">#571A6F</color>
+
+    <color name="secondaryColorLighter">#FE9D9F</color>
+    <color name="secondaryColorLight">#FD7276</color>
+    <color name="secondaryColor">#F04C4F</color>
+    <color name="secondaryColorDark">#DF2328</color>
+    <color name="secondaryColorDarker">#AE1014</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primaryTextColor">#ffffff</color>
+
+    <color name="secondaryTextColor">#FFFFFF</color>
+
+    <color name="light_black_color">#1c232e</color>
+    <color name="light_grey_color">#545659</color>
+
+    <color name="textColorPrimary">#101010</color>
+    <color name="textColorSecondary">#606060</color>
+    <color name="textColorInverse">#FEFEFE</color>
+
+    <!-- State Colors -->
+    <color name="colorSuccess">#00bfa5</color>
+    <color name="colorSuccessDark">#008e76</color>
+    <color name="colorSuccessLight">#5df2d6</color>
+    <color name="colorSuccessLighter">#B0F2E9</color>
+
+    <color name="colorWarning">#ffd54f</color>
+    <color name="colorWarningDark">#c8a415</color>
+    <color name="colorWarningLight">#ffff81</color>
+    <color name="colorWarningLighter">#FFEFBC</color>
+
+    <color name="colorDanger">#ff5252</color>
+    <color name="colorDangerDark">#c50e29</color>
+    <color name="colorDangerLight">#ff867f</color>
+    <color name="colorDangerLighter">#FFCACA</color>
+
+
+    <color name="colorInfo">#00b0ff</color>
+    <color name="colorInfoDark">#0081cb</color>
+    <color name="colorInfoLight">#69e2ff</color>
+    <color name="colorInfoLighter">#C6F4FF</color>
+
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">@color/textColorPrimary</color>
+
+    <color name="colorTranslucentOverlayLight">#11000000</color>
+    <color name="colorTranslucentOverlayMedium">#22000000</color>
+    <color name="colorTranslucentOverlayHeavy">#44000000</color>
+
+    <color name="colorSecondarySurface">#f0f0f0</color>
+    <color name="colorSecondarySurfaceDivider">#22000000</color>
+    <color name="textColorCard">#EFE7E7</color>
+
+    <color name="colorSecondary">#ff8450</color>
+    <color name="colorSecondaryLight">#ffa57f</color>
+    <color name="colorSecondaryLighter">#ffd3c0</color>
+    <color name="colorSecondaryDark">#ee5a1b</color>
+    <color name="colorSecondaryDarker">#9e3407</color>
+
+<!--    Specific Colors   -->
+    <color name="colorChipBackground">#4400bfa5</color>
+
+    <color name="colorBatteryTwenty">#f04a5a</color>
+    <color name="colorBatteryForty">#f4794b</color>
+    <color name="colorBatterySixty">#faa73c</color>
+    <color name="colorBatteryEighty">#a4b15d</color>
+    <color name="colorBatteryFull">#4cbb7e</color>
+
+</resources>

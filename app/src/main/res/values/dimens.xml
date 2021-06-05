@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="double_margin">32dp</dimen>
+    <dimen name="extra_margin">24dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="element_spacing">8dp</dimen>
+    <dimen name="line_spacing">4dp</dimen>
+
+    <dimen name="home_app_bar_height">300dp</dimen>
+
+    <dimen name="home_avatar_image_size">54dp</dimen>
+    <dimen name="home_center_image_size">50dp</dimen>
+    <dimen name="home_center_image_radius">3dp</dimen>
+    <dimen name="home_active_center_image_size">85dp</dimen>
+    <dimen name="home_active_center_image_radius">4dp</dimen>
+
+    <dimen name="problem_image_height">80dp</dimen>
+
+    <dimen name="pageMargin">12dp</dimen>
+    <dimen name="offset">12dp</dimen>
+    <dimen name="pageMarginAndOffset">24dp</dimen>
+
+    <dimen name="eval_list_unsaved_image_margin">2dp</dimen>
+    <dimen name="eval_list_scroller_popup_size">50dp</dimen>
+</resources>
