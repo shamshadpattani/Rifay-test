@@ -64,7 +64,6 @@ class AddPostFragment(): BottomSheetDialogFragment() {
         }
         viewModel.dataLoading.observe(this){
             if(it){
-                Toast.makeText(requireContext(), "Loading..", Toast.LENGTH_SHORT).show()
                 binding.saveBtn.visibility=View.GONE;
             }else{
                 binding.saveBtn.visibility=View.VISIBLE;
@@ -85,6 +84,8 @@ class AddPostFragment(): BottomSheetDialogFragment() {
                 }
                 else -> {
                     viewModel.savePost()
+                    binding.saveBtn.visibility=View.INVISIBLE;
+                    Toast.makeText(requireContext(), "Loading..", Toast.LENGTH_SHORT).show()
                 }
             }
 
