@@ -1,6 +1,7 @@
 package com.shamshad.myapplication
 
 import android.app.Application
+import android.content.Context
 import androidx.lifecycle.*
 import com.autosmarts.gondor.data.repository.utils.ResultOf
 import com.shamshad.myapplication.data.model.ListData
@@ -22,56 +23,53 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
      val listData:LiveData<List<ListData>> =_listdata
 
-    val title: MutableLiveData<String> = MutableLiveData()
-    val descrp: MutableLiveData<String> = MutableLiveData()
-    private val _dismissDialog = MutableLiveData<Boolean>(false)
-    val dismissDialog: LiveData<Boolean> = _dismissDialog
+    private val _posterror = MutableLiveData<String>()
+
+    val posterror:LiveData<String> =_posterror
+
     private val _ispostAdd = MutableLiveData<Boolean>(false)
     val ispostAdd: LiveData<Boolean> = _ispostAdd
 
 init {
-    getList()
+
 }
 
-
-    private fun getList() {
+    fun getList(context: Context) {
         viewModelScope.launch(Dispatchers.Default) {
-            listRepo.getList().collect{ result ->
+            listRepo.getList(context).collect{ result ->
                 when (result) {
                     is ResultOf.Success -> {
                         _dataLoading.postValue(false)
                         _listdata.postValue(result.value!!)
                     }
                     is ResultOf.Loading -> _dataLoading.postValue(true)
-                    is ResultOf.Error -> _dataLoading.postValue(false)
+                    is ResultOf.Error -> {
+                        _dataLoading.postValue(true)
+
+                    }
                 }
             }
         }
     }
 
 
-
-    fun discardChanges() {
-        _dismissDialog.postValue(true)
-    }
-    fun activeDialog(){
-        _dismissDialog.postValue(false)
-        title.postValue("")
-        descrp.postValue("")
-    }
-
-    fun savePost() {
+    fun savePost(title:String,desc:String) {
 
         viewModelScope.launch(Dispatchers.IO) {
-            listRepo.setPost(title.value.toString(),descrp.value.toString()).collect{ result ->
+            listRepo.setPost(title,desc).collect{ result ->
                 when (result) {
                     is ResultOf.Success -> {
                         _dataLoading.postValue(false)
                         _ispostAdd.postValue(true)
-                        discardChanges();
+                        getList(getApplication())
+                        //discardChanges();
                     }
                     is ResultOf.Loading -> _dataLoading.postValue(true)
-                    is ResultOf.Error -> _dataLoading.postValue(false)
+                    is ResultOf.Error -> {
+                        _posterror.postValue(result.exception.toString())
+                        _dataLoading.postValue(true)
+                    }
+
                 }
             }
         }
